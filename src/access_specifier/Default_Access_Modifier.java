@@ -1,0 +1,38 @@
+package access_specifier;
+
+public class Default_Access_Modifier {
+
+	int a=20;            // DEFAULT ACCESS SPECIFIER VARIABLE--GLOBAL--NON-STATIC
+	public int b=30;     // PUBLIC ACCESS SPECIFIER VARIABLE --GLOBAL--NON-STATIC
+	private int c=40;    // PRIVATE ACCESS SPECIFIER VARIABLE--GLOBAL--NON-STATIC
+	
+	public void test1()  // PUBLIC METHOD--ACCESSEBLE WITHIN SAME PROJECT
+	{
+		System.out.println("HI I AM PUBLIC TEST1 METHOD FROM DEFAULT ACCESS MODIFIER CLASS");
+	}
+	
+	void test2()        // DEFAULT METHOD--ACCESSEBLE WITHIN SAME PACKAGE
+	{
+		System.out.println("HI I AM DEFAULT TEST2 METHOD FROM DEFAULT ACCESS MODIFIER CLASS");
+	}
+	
+	private void test3()  // PRIVATE METHOD--ACCESSEBLE WITHIN SAME CLASS ONLY
+	{
+		System.out.println("HI I AM PRIVATE TEST3 METHOD FROM DEFAULT ACCESS MODIFIER CLASS");
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		Default_Access_Modifier dam = new Default_Access_Modifier();
+		
+		dam.test1();  // CALLING PUBLIC METHOD IN SAME CLASS.....MARKED = GREEN DOT
+		dam.test2();  // CALLING DEFAULT METHOD IN SAME CLASS....MARKED = BLUE TRIANGLE
+		dam.test3();  // CALLING PRIVATE METHOD IN SAME CLASS....MARKED = RED SQUARE
+		
+		System.out.println("CALLING DEFAULT VARIABLE ACCESS WITHIN PACKAGE A = "+dam.a); // CALLING DEFAULT VARIABLE
+		System.out.println("CALLING PUBLIC VARIABLE ACCESS WITHIN PROJECT B= "+dam.b);   // CALLING PUBLIC VARIABLE
+		System.out.println("CALLING PRIVATE VARIABLE ACCESS WITHIN CLASS C = "+dam.c);   // CALLING PRIVATE VARIABLE
+	}
+
+}

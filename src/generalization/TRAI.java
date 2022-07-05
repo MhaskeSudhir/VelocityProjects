@@ -1,0 +1,14 @@
+package generalization;
+
+public interface TRAI {
+	// TELECOM REGULATORY AUTHORITY OF INDIA
+	// EXTRACTED SHARED CHARATERISTICS OF TELECOM COMPANIES
+	// COMBINED SHARED CHARATERISTICS IN INTERFACE TRAI
+	
+	void call();
+	void message();
+	void data();
+	
+	int SIMcard=10;  // ALL COMPANIES SIMCARD PRICE DECIDED 10 RS
+
+}
