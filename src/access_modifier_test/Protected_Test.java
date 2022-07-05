@@ -14,6 +14,7 @@ public class Protected_Test extends Protected_Access_Modifier
 		// TO MAKE USE OF PROTECTED METHOD OUTSIDE PACKAGE, CREATED OBJECT OF SUB-CLASS AS WE USE IN INHERITANCE
 		
 		Protected_Test pt = new Protected_Test();
+		//new comment added
 		
 		pt.display3();   // PROTECTED METHOD CALLING USING INHERITANCE 
 		                 // AS PROTECTED TEST IS CHILD CLASS AND EXTENDS PROTECTED ACCESS MODIFIER
